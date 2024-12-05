@@ -1,0 +1,80 @@
+/* General body styling */
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	background-color: #c3c3c3; /* Softer background for better contrast */
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Header styling */
+  header h1 {
+	margin-top: 20px;
+	font-size: 35px;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better readability */
+  }
+
+  .question{
+	font-size: 20px;
+  }
+  
+  /* Category display */
+  #categoryDisplay {
+	margin: 0px 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(255, 250, 250);
+	text-shadow: 1px 1px 2px rgba(180, 180, 180, 0.1);
+  }
+  
+  /* Interest images container (3x3 grid layout) */
+  #itemsContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns for CAPTCHA style */
+	gap: 15px; /* Space between grid items */
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+	max-width: 600px; /* Limit container width for better focus */
+	background: #ffffff; /* White background for the grid area */
+	border: 2px solid #ddd; /* Subtle border around the grid */
+	border-radius: 12px; /* Rounded edges for aesthetics */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  /* Individual image styles */
+  #itemsContainer img {
+	width: 100%; /* Responsive width to fit grid cells */
+	height: auto; /* Maintain aspect ratio */
+	cursor: pointer;
+	border: 1px solid #ddd; /* Default border */
+	border-radius: 12px; /* Rounded corners */
+	transition: transform 0.3s, opacity 0.3s, border-color 0.3s;
+	background-color: #d0d0d0; /* Fallback color for images */
+  }
+  
+  /* Hover effect for images */
+  #itemsContainer img:hover {
+	transform: scale(1.1); /* Slight zoom effect */
+	border-color: #006076; /* Highlight border on hover */
+  }
+  
+  /* Message display styling */
+  #message {
+	margin: 20px 0;
+	font-size: 1.2rem;
+	color: rgb(255, 73, 73);
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Guesses left display styling */
+  #guessesLeft {
+	font-weight: bold;
+	color: #86ffc9;
+	font-size: 1.2rem;
+  }
+  
+  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fun guessing game where players click on images to guess Makena's special interests!">
+  <title>Makena's (Special) Interest Game</title>
+  <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+  <header>
+    <h1>Makena's (Special) Interest Game</h1>
+  </header>
+
+  <main>
+    <!-- Category display -->
+    <p id="categoryDisplay" aria-live="polite" role="heading" class="game-category">Guess my interests!</p> 
+
+    <!-- Question display -->
+    <p id="questionDisplay" aria-live="polite" class="game-question">Your question will appear here.</p>
+
+    <!-- Container for clickable images -->
+    <div id="itemsContainer" role="list" class="game-container"></div>
+    
+    <!-- Feedback for player guesses -->
+    <p id="message" aria-live="assertive" class="game-message">Click on the correct image!</p>
+
+    <!-- Guesses Left -->
+    <p> 
+      <span id="guessesLeft" aria-live="polite" class="game-guesses"></span>
+    </p>
+  </main>
+
+
+  <!-- External JS file -->
+  <script src="js/main.js"></script>
+</body>
+</html>
